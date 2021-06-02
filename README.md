@@ -65,12 +65,16 @@ Dans le fichier "user.controllers.js" on implémenter les fonctions *
 * POST /Regestir ajouter un utilisateur 
 	* Paraméters
 		* no parameters
-	* requiset body : { "Firstname" : "", "Lastname" : "" , "email" } 
+	* requiset body : { "Firstname" : "", "Lastname" : "" , "email",: "", "password":"" } 
 	* Resulat
 		* code : 201 
 
 
 ***login()*** 
+* GET /Login 
+	* Paraméters
+		* no parameters
+	** requiset body : { "email" : "", "password" : "" }  
 
 
 ***GetUsers()***
@@ -130,17 +134,26 @@ Dans le fichier "tache.controllers.js" on implémenter les fonctions :
 
 ***Add_comment()***
 
-* POST /tache/create ajouter une tache 
+* POST /tache/createComment ajouter une tache 
 	* Paraméters
 		* no parameters
-	* requiset body : { "id" : "", "commentairs" : { "id" : "" }} 
+	* requiset body : { "descrption" : ""} 
 	* Resulat
 		* code : 201 
 		
 ***Add_Comment_to_Tache()***
-
-
+*PATCH /tache/addComment
+	* Paraméters
+		* no parameters
+	* requiset body : { "tacheId" : "", "commentairs" : { "commentId" : "" }} 
+	* Resulat
+		* code : 200 
 ***ChangeStutas()***
-
+*PATCH /tache/updateStatus/:id
+	* Paraméters
+		* TacheID
+	* requiset body : { } 
+	* Resulat
+		* code : 200 
 
 
