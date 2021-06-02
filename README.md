@@ -142,14 +142,14 @@ Dans le fichier "tache.controllers.js" on implémenter les fonctions :
 		* code : 201 
 		
 ***Add_Comment_to_Tache()***
-*PATCH /tache/addComment
+* PATCH /tache/addComment
 	* Paraméters
 		* no parameters
 	* requiset body : { "tacheId" : "", "commentairs" : { "commentId" : "" }} 
 	* Resulat
 		* code : 200 
 ***ChangeStutas()***
-*PATCH /tache/updateStatus/:id
+* PATCH /tache/updateStatus/:id
 	* Paraméters
 		* TacheID
 	* requiset body : { } 
