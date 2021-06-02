@@ -147,7 +147,9 @@ Dans le fichier "tache.controllers.js" on implémenter les fonctions :
 		* no parameters
 	* requiset body : { "tacheId" : "", "commentairs" : { "commentId" : "" }} 
 	* Resulat
-		* code : 200 
+		* code : 200
+
+
 ***ChangeStutas()***
 * PATCH /tache/updateStatus/:id
 	* Paraméters
